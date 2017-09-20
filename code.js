@@ -142,7 +142,7 @@ $(".choice").on('click', function(){
 	}
 });
 
-var totaltime = 13;
+var totaltime = 60;
 var already = false;
 var countdown = function(){
   var intervalt = setInterval(function(){

@@ -1,21 +1,21 @@
 @font-face{
 	font-family: "TT Norms";
-	src: url(fonts/regular.woff) format("woff");
+	src: url("fonts/regular.WOFF") format("woff");
 	font-weight: 100;
 }
 @font-face{
 	font-family: "TT Norms";
-	src: url(fonts/bold.woff) format("woff");
+	src: url("fonts/bold.WOFF") format("woff");
 	font-weight: bold;
 }
 @font-face{
 	font-family: "TT Norms";
-	src: url(fonts/extrabold.woff) format("woff");
+	src: url("fonts/extrabold.WOFF") format("woff");
 	font-weight: 900;
 }
 @font-face{
 	font-family: "TT Norms";
-	src: url(fonts/medium.woff) format("woff");
+	src: url("fonts/medium.WOFF") format("woff");
 	font-weight: 400;
 }
 
