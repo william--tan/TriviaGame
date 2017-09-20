@@ -1,0 +1,155 @@
+@font-face{
+	font-family: "TT Norms";
+	src: url(fonts/regular.woff) format("woff");
+	font-weight: 100;
+}
+@font-face{
+	font-family: "TT Norms";
+	src: url(fonts/bold.woff) format("woff");
+	font-weight: bold;
+}
+@font-face{
+	font-family: "TT Norms";
+	src: url(fonts/extrabold.woff) format("woff");
+	font-weight: 900;
+}
+@font-face{
+	font-family: "TT Norms";
+	src: url(fonts/medium.woff) format("woff");
+	font-weight: 400;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.redanimation{
+  background: -webkit-linear-gradient(180deg, red, black, red);
+  background-size: 500% 100%; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: AnimationName 3s ease infinite;
+}
+
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    0%{background-position:0% 50%}
+}
+
+.nodisplay{
+	display: none;
+}
+
+#startBtn{
+	position: fixed;
+	left: 44.4%;
+	top:  65%;
+	font-family: "TT Norms";
+	font-weight: bold;
+	font-size: 3em;
+	user-select: none;
+	letter-spacing: 3px;
+}
+
+#startBtn:hover{
+	color:  blue;
+	transition: all 0.2s ease-in;
+	cursor: pointer;
+}
+
+#GameTitle{
+	margin: 10% 25% 0% 25%;
+	font-family: "TT Norms";
+	font-weight: bold;
+	font-size: 5em;
+	letter-spacing: 4px;
+}
+
+#clockdiv{
+	font-family: "TT Norms";
+	font-weight: bold;
+	font-size:  4em;
+	position: fixed;
+	left: 80%;
+	top:  20px;
+	user-select: none;
+	text-align: center;
+}
+
+#clockdiv2{
+	font-family: "TT Norms";
+	font-weight: bold;
+	font-size:  4em;
+	position: fixed;
+	left: 80%;
+	top: 20px;
+	visibility: visible;
+	user-select: none;
+	text-align: center;
+}
+
+#arrow{
+	opacity: 0;
+	color: blue;
+	transition: all 0.2s ease-in;
+}
+
+.questionb{
+	position: fixed;
+	margin: 5% 5% 0 5%;
+	top: 4em;
+}
+
+.choices{
+	margin-left: 2em;
+	position: fixed;
+	vertical-align: bottom;
+	bottom: 6em;
+	user-select: none;
+}
+.choices > h2{
+	display:  inline-block;
+	margin: 0 2em 0 2em;
+	min-width: 60px;
+	text-align:  center;
+}
+
+#question{
+	font-family: "TT Norms";
+	font-weight:  bold;
+	font-size: 5em;
+	user-select: none;
+}
+
+.choice{
+	font-family: "TT Norms";
+	font-weight:  100;
+	border-bottom: 1px solid rgba(0, 0, 255, 0);
+	transition: all 0.2s ease-in;
+	user-select: none;
+}
+
+.choice:hover{
+	font-family: "TT Norms";
+	color: blue;
+	font-weight:  100;
+	border-bottom:  1px solid blue;
+	transition: all 0.2s ease-in;
+	cursor: pointer;
+}
+
+.choice:hover #arrow{
+	opacity: 1;
+	transition: all 0.1s ease-in;
+}
+
+#res{
+	visibility: hidden;
+}
